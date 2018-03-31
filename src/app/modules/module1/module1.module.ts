@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import {Module1RoutingModule} from './module1-routing.module';
 import {Component1Component} from './components/component1/component1.component';
 import {CoreModule} from '../core/core.module';
+import {Service1Service} from './services/service1.service';
 
 @NgModule({
   imports: [
@@ -13,7 +14,10 @@ import {CoreModule} from '../core/core.module';
     // which in turn makes exported components from CoreModule accessible in this module
     CoreModule
   ],
-  declarations: [Component1Component]
+  declarations: [Component1Component],
+  providers: [
+    Service1Service
+  ]
 })
 export class Module1Module {
 }
