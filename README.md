@@ -1,27 +1,34 @@
 # Demo1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+## Create project
+``` 
+ng new demo1 --routing
+```
 
-## Development server
+## Create core module
+> Core module contains 
+> - components shared across all modules
+> - singleton services
+> - is imported by root module
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+```
+ng generate module modules/core --routing
+ng generate service modules/core/services/serviceX
+ng generate component modules/core/component/componentX
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Create feature modules
+> Feature modules
+> - import core module to access common components and services
+> - can have their own services, but injected in component
+```
+ng generate module modules/module1 --routing
+ng generate component modules/module1/components/component1
+ng generate service modules/module1/services/service1
 
-## Build
+ng generate module modules/module2 --routing
+ng generate component modules/module2/components/component2
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Setup routing in root modules and feature modules
