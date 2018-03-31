@@ -18,6 +18,9 @@ ng generate service modules/core/services/serviceX
 ng generate component modules/core/component/componentX
 ```
 
+## Create UI component module (using angular material in this demo)
+ng generate module modules/ng-material
+
 ## Create feature modules
 > Feature modules
 > - import core module to access common components and services
