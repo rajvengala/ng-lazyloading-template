@@ -14,6 +14,8 @@ import {CoreModule} from './modules/core/core.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // Import only required modules
+    // Feature modules will be lazy loaded on-demand
     CoreModule
   ],
   providers: [],

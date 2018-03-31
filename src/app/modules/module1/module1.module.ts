@@ -9,6 +9,8 @@ import {CoreModule} from '../core/core.module';
   imports: [
     CommonModule,
     Module1RoutingModule,
+    // Module1 uses Component1Component, so import CoreModule
+    // which in turn makes exported components from CoreModule accessible in this module
     CoreModule
   ],
   declarations: [Component1Component]
