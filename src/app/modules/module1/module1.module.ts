@@ -16,6 +16,7 @@ import {Service1Service} from './services/service1.service';
   ],
   declarations: [Component1Component],
   providers: [
+    // Services in feature modules should be used outside this module
     Service1Service
   ]
 })
