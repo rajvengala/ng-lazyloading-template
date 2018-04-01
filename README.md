@@ -2,7 +2,7 @@
 
 ## Create project
 ``` 
-ng new demo1 --routing
+ng new demo1 --routing --style scss
 ```
 
 ## Create core module

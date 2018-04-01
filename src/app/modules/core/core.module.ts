@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 import {CoreRoutingModule} from './core-routing.module';
-import {ComponentXComponent} from './component/component-x/component-x.component';
+import {ComponentXComponent} from './components/component-x/component-x.component';
 import {ServiceXService} from './services/service-x.service';
 import {NgMaterialModule} from '../ng-material/ng-material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
