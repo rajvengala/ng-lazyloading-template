@@ -26,7 +26,7 @@ ng generate module modules/ng-material
 ## Create feature modules
 > Feature modules
 > - import core module to access common components and services
-> - can have their own services, but injected in component
+> - can have their own services, injected at feature module and should not be used by other modules
 ```
 ng generate module modules/module1 --routing
 ng generate component modules/module1/components/component1
